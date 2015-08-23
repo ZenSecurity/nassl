@@ -34,7 +34,7 @@ Mavericks, Ubuntu 13.04 and Debian 7. This is the easiest build script to use.
 
     wget http://zlib.net/zlib-1.2.8.tar.gz
     tar xvfz  zlib-1.2.8.tar.gz
-    wget https://www.openssl.org/source/openssl-1.0.2a.tar.gz
+    wget http://www.openssl.org/source/old/1.0.2/openssl-1.0.2a.tar.gz
     tar xvfz  openssl-1.0.2a.tar.gz
     python buildAll_unix.py
 
