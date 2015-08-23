@@ -79,7 +79,8 @@ class X509Certificate:
             if self._dnsname_match(commonName, hostname):
                 return X509_NAME_MATCHES_CN
         except KeyError: # No CN either ? This certificate is malformed
-            raise X509HostnameValidationError("Certificate has no subjectAltName and no Common Name; malformed certificate ?")
+            pass
+            #raise X509HostnameValidationError("Certificate has no subjectAltName and no Common Name; malformed certificate ?")
 
         return X509_NAME_MISMATCH
 
